@@ -22,7 +22,7 @@ def table():
     price = int(markup * price)
     pricetable = []
     for dollarvalue in [100,200,300,400,500,1000,2000]:
-        pricetable.append('$%s for %s BTC' % (dollarvalue, decimal.Decimal(dollarvalue)/price))
+        pricetable.append((dollarvalue, decimal.Decimal(dollarvalue)/price))
     return render_template('quote.html', pricetable=pricetable)
 
 
