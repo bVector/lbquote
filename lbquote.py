@@ -21,7 +21,7 @@ def table():
     price = int(float(price))
     price = int(markup * price)
     pricetable = []
-    for dollarvalue in [100,200,300,400,500,1000,2000]:
+    for dollarvalue in [100,200,300,400,(price - (price % 100)),price,(price + 100 - (price % 100)), 1000,2000]:
         pricetable.append((dollarvalue, decimal.Decimal(dollarvalue)/price))
     return render_template('quote.html', pricetable=pricetable)
 

@@ -16,7 +16,7 @@ table a:hover {
 table {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#666;
-	font-size:12px;
+	font-size:24px;
 	text-shadow: 1px 1px 0px #fff;
 	background:#eaebec;
 	margin:20px;
@@ -58,12 +58,15 @@ table tr {
 	padding-left:20px;
 }
 table td:first-child {
-	text-align: left;
+	text-align: right;
 	padding-left:20px;
 	border-left: 0;
 }
 table td {
-	padding:18px;
+  text-align:left;
+  padding:1px;
+  padding-left:10px;
+  padding:right:10px;
 	border-top: 1px solid #ffffff;
 	border-bottom:1px solid #e0e0e0;
 	border-left: 1px solid #e0e0e0;
