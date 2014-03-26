@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<Title>Numbers</title>
+{% if pricetable %}
+<ul>
+{% for item in pricetable %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+{% endif %}
