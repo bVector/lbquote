@@ -3,7 +3,7 @@ import requests
 import decimal
 
 app = Flask(__name__)
-#app.debug = True
+app.debug = True
 
 markup = 1.07
 decimal.getcontext().prec = 4
