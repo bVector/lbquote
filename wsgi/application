@@ -18,4 +18,4 @@ try:
 except IOError:
     pass
 
-from ../lbquote import app as application
+from ..lbquote import app as application
